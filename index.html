@@ -6,6 +6,7 @@
 <title>EntConn — Coming Soon</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -135,6 +136,24 @@
     .logo-wrap { width: 160px; }
     .divider { height: 40px; margin: 1.8rem 0; }
   }
+
+  /* MyLK Labs credit */
+  .footer { display: flex; flex-direction: column; align-items: center; gap: 1.1rem; }
+  .brand-credit {
+    display: inline-flex; align-items: center; gap: 14px;
+    text-decoration: none; transition: opacity 0.2s ease;
+  }
+  .brand-credit:hover { opacity: 0.75; }
+  .credit-label {
+    font-family: 'Barlow', sans-serif; font-size: 0.66rem;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(232,228,220,0.4);
+  }
+  .mylk-logo { display: flex; flex-direction: column; align-items: flex-start; line-height: 1; text-transform: none; letter-spacing: 0; }
+  .mylk-my  { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 0.72rem; color: #f5f3ee; }
+  .mylk-lk  { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 1.3rem; color: #ff7a3d; margin: 1px 0 2px; }
+  .mylk-labs{ font-family: 'Space Mono', monospace; font-size: 0.55rem; letter-spacing: 0.3em; color: #f5f3ee; }
+  .copyright { color: rgba(232,228,220,0.18); }
 </style>
 </head>
 <body>
@@ -146,6 +165,12 @@
   <p class="headline">Something is being built.</p>
   <p class="sub">Launching soon <span class="dot"></span> entconn.co.uk</p>
 </div>
-<div class="footer">© 2026 EntConn &nbsp;&nbsp;·&nbsp;&nbsp; All rights reserved</div>
+<div class="footer">
+  <a class="brand-credit" href="https://mylklabs.co.uk" target="_blank" rel="noopener" aria-label="A product of MyLK Labs">
+    <span class="credit-label">A product of</span>
+    <span class="mylk-logo" aria-hidden="true"><span class="mylk-my">My</span><span class="mylk-lk">LK.</span><span class="mylk-labs">LABS</span></span>
+  </a>
+  <span class="copyright">© 2026 EntConn &nbsp;&nbsp;·&nbsp;&nbsp; All rights reserved</span>
+</div>
 </body>
 </html>
